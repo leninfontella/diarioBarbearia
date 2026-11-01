@@ -16,7 +16,7 @@ Preservar inclusão, edição e exclusão, filtros e totais mensais e anuais. Os
 
 ## Brand Commitments
 
-Referência visual fornecida pelo usuário: referenciaAplicativo.jpg. Perfil Jéssica, Canoas, RS (grafia confirmada pelo usuário). Manter cinco atalhos de categorias no Painel: Cabelo, Unhas, Sobrancelha, Estética e Outros. Preservar o histórico Git publicado.
+Referência visual fornecida pelo usuário: referenciaAplicativo.jpg. Perfil Jéssica, Canoas, RS (grafia confirmada pelo usuário). Manter cinco atalhos de categorias no Painel: Cabelo, Barba, Sobrancelha, Estética e Outros. Preservar o histórico Git publicado.
 
 ## Open Decisions
 

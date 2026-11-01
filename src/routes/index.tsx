@@ -30,7 +30,6 @@ import {
   EyeOff,
   ImagePlus,
   Camera,
-  Hand,
   Sparkles,
   Ellipsis,
   MapPin,
@@ -38,16 +37,17 @@ import {
   Pencil,
   Settings,
   type LucideIcon,
+  createLucideIcon,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Procedimentos Capilares" },
+      { title: "Procedimentos de Barbearia" },
       {
         name: "description",
         content:
-          "Um tempo para você. Um diário para lembrar. Registre seus procedimentos e acompanhe seus gastos com beleza.",
+          "Um tempo para você. Um diário para lembrar. Registre seus procedimentos e acompanhe seus gastos com barbearia.",
       },
     ],
   }),
@@ -101,10 +101,16 @@ const EMPTY_PROFILE: Profile = { nome: "", cidade: "", foto_path: null };
 const PHOTO_URL_TTL = 60 * 60 * 24;
 const MAX_PHOTO_BYTES = 5 * 1024 * 1024;
 
-const CATEGORIAS = ["Cabelo", "Unhas", "Sobrancelha", "Estética", "Outros"];
+const Beard = createLucideIcon("Beard", [
+  ["path", { d: "M4 7v5a8 8 0 0 0 16 0V7", key: "jaw" }],
+  ["path", { d: "M7.5 12.5c1.6-1.6 3.2-1.4 4.5-.2 1.3-1.2 2.9-1.4 4.5.2", key: "mustache" }],
+  ["path", { d: "M10.5 16h3", key: "mouth" }],
+]);
+
+const CATEGORIAS = ["Cabelo", "Barba", "Sobrancelha", "Estética", "Outros"];
 const CATEGORY_ICONS: Record<string, LucideIcon> = {
   Cabelo: Scissors,
-  Unhas: Hand,
+  Barba: Beard,
   Sobrancelha: Eye,
   Estética: Sparkles,
   Outros: Ellipsis,
@@ -350,16 +356,15 @@ function LoginPage() {
   return (
     <main className="login">
       <picture className="login-photo">
-        <source media="(min-width: 900px)" srcSet="/images/login-desktop.png" />
-        <img src="/images/login-mobile.png" alt="" />
+        <img src="/images/homem-degrade.png" alt="" />
       </picture>
       <section className="login-panel" aria-labelledby="login-title">
         <div className="login-box">
           <h1 id="login-title">{isSignup ? "Crie sua conta" : "Entre com a sua conta"}</h1>
           <p className="login-sub">
             {isSignup
-              ? "Crie seu diário pessoal de beleza para registrar "
-              : "Diário pessoal de beleza para registrar "}
+              ? "Crie seu diário pessoal de barbearia para registrar "
+              : "Diário pessoal de barbearia para registrar "}
             <b>procedimentos</b> e acompanhar <b>gastos</b>.
           </p>
           {!hasSupabaseConfig ? (
@@ -835,13 +840,13 @@ function Index({
               {topbar}
               <div className="hd-in hd-welcome">
                 <p className="welcome-hi">
-                  Bem-vinda(o),
+                  Bem-vindo(a),
                   <strong className="welcome-name">{profile?.nome ?? " "}</strong>
                 </p>
                 <Avatar profile={profile} size={112} className="welcome-photo" />
                 <div>
                   <h1 ref={heading} tabIndex={-1}>
-                    Procedimentos <span>de Beleza</span>
+                    Procedimentos <span>de Barbearia</span>
                   </h1>
                   <p>Cada cuidado faz parte da sua história.</p>
                 </div>
@@ -1141,7 +1146,7 @@ function Index({
             <header className="hd">
               <div className="topbar topbar-form">
                 <button
-                  className="ib ib-rose"
+                  className="ib ib-lime"
                   aria-label="Voltar"
                   onClick={() => navigate(editingEntry ? "procedimentos" : "painel")}
                 >

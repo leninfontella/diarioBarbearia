@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Procedimentos Capilares",
-  "short_name": "Capilares",
-  "description": "Seu diário de beleza: procedimentos e gastos.",
+  "name": "Procedimentos de Barbearia",
+  "short_name": "Barbearia",
+  "description": "Seu diário de barbearia: procedimentos e gastos.",
   "lang": "pt-BR",
   "start_url": "/",
   "scope": "/",

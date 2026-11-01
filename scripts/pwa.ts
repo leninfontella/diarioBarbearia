@@ -16,7 +16,7 @@ export function pwa(): Plugin {
           ...[...sources.matchAll(/\/images\/[\w.-]+/g)].map((match) => match[0]),
           "/manifest.webmanifest",
           "/brand-mark.svg",
-          "/images/compartilhar-capilares.jpg",
+          "/images/compartilhar-barbearia.jpg",
           "/icons/favicon-32.png",
           "/favicon.ico",
           "/icons/apple-touch-icon.png",

@@ -34,8 +34,8 @@
 :root {
   --ink: #1b1a1e;
   --ink-2: #2a292e;
-  --rose: #f9b4c4;
-  --blush: #fdd9e2;
+  --lime: #d4f07a;
+  --lime-soft: #edf8c8;
   --paper: #f3f3f0;
   --field: #f6f6f4;
   --card-bg: #fff;
@@ -54,7 +54,7 @@
   --card: #fff;
   --primary: var(--ink);
   --primary-foreground: #fff;
-  --secondary: var(--blush);
+  --secondary: var(--lime-soft);
   --muted-foreground: var(--mut);
   --border: #e6e6e2;
   --destructive: var(--danger);
@@ -115,7 +115,7 @@ img {
   max-width: 100%;
 }
 :focus-visible {
-  outline: 2px solid var(--rose);
+  outline: 2px solid var(--lime);
   outline-offset: 3px;
 }
 .card :focus-visible,
@@ -127,7 +127,7 @@ h1:focus {
   outline: none;
 }
 ::selection {
-  background: var(--blush);
+  background: var(--lime-soft);
   color: var(--ink);
 }
 .spin {
@@ -148,7 +148,7 @@ h1:focus {
   left: 16px;
   top: -60px;
   z-index: 50;
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
   padding: 10px 18px;
   border-radius: 999px;
@@ -170,7 +170,7 @@ h1:focus {
   font-weight: 600;
 }
 .app-loading svg {
-  color: var(--rose);
+  color: var(--lime);
 }
 
 /* ------------------------------------------------------------------
@@ -270,7 +270,7 @@ body:has(.shell)::after {
   margin: 10px auto 26px;
 }
 .login-sub b {
-  color: var(--rose);
+  color: var(--lime);
   font-weight: 600;
 }
 .login-field {
@@ -289,7 +289,7 @@ body:has(.shell)::after {
   transition: color 0.15s;
 }
 .login-field:focus-within > svg {
-  color: var(--rose);
+  color: var(--lime);
 }
 .login-field input {
   width: 100%;
@@ -311,7 +311,7 @@ body:has(.shell)::after {
   color: #c9c9cf;
 }
 .login-field input:focus {
-  border-color: var(--rose);
+  border-color: var(--lime);
   background: rgb(255 255 255 / 0.12);
 }
 .login-eye {
@@ -345,7 +345,7 @@ body:has(.shell)::after {
   width: 100%;
   height: 58px;
   border-radius: 999px;
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
   font-size: 16px;
   font-weight: 800;
@@ -353,7 +353,7 @@ body:has(.shell)::after {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 10px 28px rgb(249 180 196 / 0.2);
+  box-shadow: 0 10px 28px rgb(212 240 122 / 0.2);
   transition: transform 0.12s;
 }
 .login-submit:active {
@@ -366,7 +366,7 @@ body:has(.shell)::after {
   margin-top: 22px;
 }
 .login-switch button {
-  color: var(--rose);
+  color: var(--lime);
   font-weight: 700;
   padding: 6px 2px;
 }
@@ -447,8 +447,8 @@ body:has(.shell)::after {
   height: 112px;
   border-radius: 50%;
   object-fit: cover;
-  background: var(--rose);
-  border: 3px solid var(--rose);
+  background: var(--lime);
+  border: 3px solid var(--lime);
   box-shadow: 0 0 0 6px var(--ink-2);
   margin-bottom: 22px;
   flex: none;
@@ -459,7 +459,7 @@ body:has(.shell)::after {
   font-weight: 600;
   margin: 0 0 18px;
 }
-/* Nome em destaque logo abaixo de "Bem-vinda,"; menor que o título da página. */
+/* Nome em destaque logo abaixo de "Bem-vindo(a),"; menor que o título da página. */
 .welcome-name {
   display: block;
   min-height: 1.2em;
@@ -479,7 +479,7 @@ body:has(.shell)::after {
 }
 .hd-welcome h1 span {
   display: block;
-  color: var(--rose);
+  color: var(--lime);
 }
 .hd-welcome h1 + p {
   margin-top: 12px;
@@ -503,7 +503,7 @@ body:has(.shell)::after {
   border-radius: 50%;
   border: 2px solid #fff;
   object-fit: cover;
-  background: var(--rose);
+  background: var(--lime);
   flex: none;
 }
 .me span {
@@ -540,12 +540,12 @@ body:has(.shell)::after {
   background: #36353b;
 }
 .ib[aria-current="page"],
-.ib-rose {
-  background: var(--rose);
+.ib-lime {
+  background: var(--lime);
   color: var(--ink);
 }
-.ib-rose:hover {
-  background: #f7a3b6;
+.ib-lime:hover {
+  background: #c4e35c;
 }
 .popover {
   position: absolute;
@@ -630,7 +630,7 @@ body:has(.shell)::after {
 .sq-ic {
   display: grid;
   place-items: center;
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
   flex: none;
 }
@@ -699,7 +699,7 @@ body:has(.shell)::after {
   transition: transform 0.15s;
 }
 .cat:nth-child(odd) span {
-  background: var(--blush);
+  background: var(--lime-soft);
 }
 .cat:hover span {
   transform: translateY(-2px);
@@ -720,7 +720,7 @@ body:has(.shell)::after {
   transition: transform 0.12s;
 }
 .cta svg {
-  color: var(--rose);
+  color: var(--lime);
 }
 .cta:active {
   transform: scale(0.98);
@@ -783,7 +783,7 @@ body:has(.shell)::after {
   height: 48px;
   border-radius: 50%;
   background: var(--ink-2);
-  color: var(--rose);
+  color: var(--lime);
   display: grid;
   place-items: center;
   transition:
@@ -797,7 +797,7 @@ body:has(.shell)::after {
   color: #fff;
 }
 .hd-cat[aria-pressed="true"] span {
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
 }
 
@@ -856,7 +856,7 @@ body:has(.shell)::after {
   color: var(--ink);
 }
 .chip[aria-pressed="true"] {
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
 }
 
@@ -887,7 +887,7 @@ body:has(.shell)::after {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--rose);
+  background: var(--lime);
   display: grid;
   place-content: center;
   text-align: center;
@@ -1020,7 +1020,7 @@ body:has(.shell)::after {
   inset: -6px -3px;
 }
 .tb:hover {
-  background: var(--blush);
+  background: var(--lime-soft);
 }
 .empty {
   display: grid;
@@ -1064,7 +1064,7 @@ body:has(.shell)::after {
   cursor: pointer;
 }
 .pill-select.accent select {
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
 }
 .pill-select svg {
@@ -1073,7 +1073,7 @@ body:has(.shell)::after {
   pointer-events: none;
 }
 .pill-select select:focus-visible {
-  outline: 2px solid var(--rose);
+  outline: 2px solid var(--lime);
   outline-offset: 2px;
 }
 .pill-select select option {
@@ -1099,7 +1099,7 @@ body:has(.shell)::after {
   stroke: var(--ink-2);
 }
 .donut-value {
-  stroke: var(--rose);
+  stroke: var(--lime);
   transition: stroke-dashoffset 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 .donut-mid {
@@ -1132,7 +1132,7 @@ body:has(.shell)::after {
   font-style: normal;
   font-size: 12px;
   font-weight: 700;
-  color: var(--rose);
+  color: var(--lime);
 }
 
 .g3 {
@@ -1152,7 +1152,7 @@ body:has(.shell)::after {
   letter-spacing: -0.02em;
 }
 .tag {
-  background: var(--blush);
+  background: var(--lime-soft);
   font-size: 12px;
   font-weight: 700;
   padding: 6px 12px;
@@ -1205,7 +1205,7 @@ body:has(.shell)::after {
   cursor: pointer;
 }
 .field-select select:focus {
-  border-color: var(--rose);
+  border-color: var(--lime);
   background: #fff;
 }
 .res {
@@ -1237,7 +1237,7 @@ body:has(.shell)::after {
   min-width: 0;
 }
 .res-two > div + div {
-  border-left: 1.5px solid var(--rose);
+  border-left: 1.5px solid var(--lime);
 }
 .res-two .val {
   font-size: 21px;
@@ -1329,7 +1329,7 @@ textarea.inp {
   color: #9a9aa0;
 }
 .inp:focus {
-  border-color: var(--rose);
+  border-color: var(--lime);
   background: #fff;
 }
 .cur {
@@ -1386,18 +1386,18 @@ textarea.inp {
     background-color 0.15s;
 }
 .ba-tile svg {
-  color: var(--rose);
+  color: var(--lime);
 }
 .ba-tile:hover {
   border-color: #8a8990;
   background: var(--ink-2);
 }
 .ba-tile.accent {
-  border-color: var(--rose);
-  color: var(--rose);
+  border-color: var(--lime);
+  color: var(--lime);
 }
 .ba-tile.accent:hover {
-  border-color: #fbd0da;
+  border-color: #e4f5a6;
 }
 .ba-tile.filled {
   border-style: solid;
@@ -1430,8 +1430,8 @@ textarea.inp {
   align-items: center;
   gap: 12px;
   width: 100%;
-  border: 1.5px dashed #e3b6c2;
-  background: #fff7f9;
+  border: 1.5px dashed #c3dc78;
+  background: #f9fdec;
   border-radius: 18px;
   padding: 12px 14px;
   font-weight: 600;
@@ -1487,7 +1487,7 @@ textarea.inp {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -1513,15 +1513,15 @@ textarea.inp {
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  background: var(--blush);
-  border: 3px solid var(--blush);
+  background: var(--lime-soft);
+  border: 3px solid var(--lime-soft);
   flex: none;
 }
 .btn-soft {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--blush);
+  background: var(--lime-soft);
   color: var(--ink);
   border-radius: 999px;
   padding: 12px 18px;
@@ -1530,10 +1530,10 @@ textarea.inp {
   transition: background-color 0.15s;
 }
 .btn-soft:hover {
-  background: var(--rose);
+  background: var(--lime);
 }
 .popover button[aria-current="page"] {
-  background: var(--blush);
+  background: var(--lime-soft);
 }
 
 /* ---------------- Navegação inferior ---------------- */
@@ -1569,7 +1569,7 @@ textarea.inp {
     color 0.18s;
 }
 .tabbar button[aria-current="page"] {
-  background: var(--rose);
+  background: var(--lime);
   color: var(--ink);
 }
 
@@ -1594,7 +1594,7 @@ textarea.inp {
   animation: toast-in 0.25s ease-out;
 }
 .toast > svg {
-  color: var(--rose);
+  color: var(--lime);
   flex: none;
 }
 .toast button {
@@ -1651,7 +1651,7 @@ textarea.inp {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--rose);
+  background: var(--lime);
   display: grid;
   place-items: center;
   margin: 0 auto 14px;
@@ -1721,7 +1721,7 @@ textarea.inp {
   color: #fff;
 }
 .btn-dark svg {
-  color: var(--rose);
+  color: var(--lime);
 }
 .btn-danger {
   background: var(--danger);
@@ -1865,7 +1865,7 @@ textarea.inp {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: var(--rose);
+    background: var(--lime);
     color: var(--ink);
     display: grid;
     place-items: center;
@@ -1889,7 +1889,7 @@ textarea.inp {
     color: #fff;
   }
   .side-link[aria-current="page"] {
-    background: var(--rose);
+    background: var(--lime);
     color: var(--ink);
   }
   .side-new {
@@ -1898,7 +1898,7 @@ textarea.inp {
     color: var(--ink);
   }
   .side-new:hover {
-    background: var(--blush);
+    background: var(--lime-soft);
     color: var(--ink);
   }
   .side-config {
@@ -1917,7 +1917,7 @@ textarea.inp {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: var(--rose);
+    background: var(--lime);
     object-fit: cover;
     flex: none;
   }

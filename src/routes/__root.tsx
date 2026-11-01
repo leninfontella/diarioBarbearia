@@ -75,23 +75,23 @@ const getSiteOrigin = createIsomorphicFn()
   .server(() => getRequestUrl().origin)
   .client(() => window.location.origin);
 
-const appName = "Procedimentos Capilares";
+const appName = "Procedimentos de Barbearia";
 const shareDescription =
-  "Um tempo para você. Um diário para lembrar. Registre seus procedimentos e acompanhe seus gastos com beleza.";
+  "Um tempo para você. Um diário para lembrar. Registre seus procedimentos e acompanhe seus gastos com barbearia.";
 const shareImageAlt =
-  "Mulher sorrindo ao lado do título Procedimentos Capilares, em branco e rosa sobre fundo escuro";
+  "Homem de barba e óculos escuros ao lado do título Procedimentos de Barbearia, em branco e verde sobre fundo escuro";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   beforeLoad: () => ({ siteOrigin: getSiteOrigin() }),
   head: ({ match: { context } }) => {
-    const shareImage = `${context.siteOrigin}/images/compartilhar-capilares.jpg`;
+    const shareImage = `${context.siteOrigin}/images/compartilhar-barbearia.jpg`;
     return {
       meta: [
         { charSet: "utf-8" },
         { name: "theme-color", content: "#1b1a1e" },
         { name: "apple-mobile-web-app-capable", content: "yes" },
         { name: "mobile-web-app-capable", content: "yes" },
-        { name: "apple-mobile-web-app-title", content: "Capilares" },
+        { name: "apple-mobile-web-app-title", content: "Barbearia" },
         { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
         { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
         { property: "og:type", content: "website" },
