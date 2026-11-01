@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Procedimentos Capilares</title>
+  <desc id="description">Tesoura em um círculo rosa sobre fundo escuro</desc>
+  <rect width="512" height="512" rx="112" fill="#1b1a1e"/>
+  <circle cx="256" cy="256" r="178" fill="#f9b4c4"/>
+  <g transform="translate(136 136) scale(10)" fill="none" stroke="#1b1a1e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="6" cy="6" r="3"/>
+    <circle cx="6" cy="18" r="3"/>
+    <path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/>
+  </g>
+</svg>

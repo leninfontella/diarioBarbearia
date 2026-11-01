@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Jéssica Salão</title>
+  <desc id="description">Seu diário de beleza, agenda e gastos</desc>
+  <defs>
+    <linearGradient id="background" x1="94" y1="32" x2="1080" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff9fb"/>
+      <stop offset=".52" stop-color="#f9e2eb"/>
+      <stop offset="1" stop-color="#efbfd3"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="154" y1="112" x2="446" y2="494" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d777a5"/>
+      <stop offset="1" stop-color="#9d336a"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="22" stdDeviation="23" flood-color="#74204b" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1090" cy="62" r="210" fill="#fff" opacity=".25"/>
+  <circle cx="110" cy="616" r="225" fill="#fff" opacity=".3"/>
+  <rect x="120" y="105" width="360" height="420" rx="92" fill="url(#tile)" filter="url(#shadow)"/>
+  <path d="M183 191c42-14 91-21 146-21 37 0 69 4 95 11-11 25-28 40-52 47v107c0 80-40 120-117 120-45 0-79-18-101-55l56-38c12 20 27 30 45 30 31 0 46-19 46-58V235c-45 1-85 6-118 17z" fill="#fff9fb"/>
+  <path d="M364 220c29-3 51-15 66-37-7 30-25 51-55 61z" fill="#f2bfd4"/>
+  <path d="M624 229h394" stroke="#bd4f85" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+  <text x="610" y="319" fill="#39272f" font-family="Manrope, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2">Jéssica</text>
+  <rect x="610" y="348" width="297" height="82" rx="12" fill="#c85e91"/>
+  <text x="652" y="409" fill="#fff" font-family="Manrope, Arial, sans-serif" font-size="53" font-weight="400" letter-spacing="16">SALÃO</text>
+  <text x="610" y="485" fill="#6d5360" font-family="Manrope, Arial, sans-serif" font-size="26">Seu diário de beleza, agenda e gastos.</text>
+</svg>
