@@ -783,9 +783,12 @@ function Index({
       </a>
 
       <aside className="sidebar" aria-label="Menu principal">
-        <div className="sidebar-logo">
-          <span aria-hidden="true">J</span>
-          <b>Jéssica Salão</b>
+        <div className="side-me">
+          <Avatar profile={profile} size={42} className="side-photo" />
+          <div>
+            <b>{profile?.nome}</b>
+            <small title={userEmail}>{profile ? profile.cidade || userEmail : ""}</small>
+          </div>
         </div>
         {NAV.map((item) => (
           <button
@@ -815,16 +818,10 @@ function Index({
           <Settings size={20} strokeWidth={1.8} aria-hidden="true" />
           <span>Configurações</span>
         </button>
-        <div className="side-me">
-          <Avatar profile={profile} size={42} className="side-photo" />
-          <div>
-            <b>{profile?.nome}</b>
-            <small title={userEmail}>{profile ? profile.cidade || userEmail : ""}</small>
-          </div>
-          <button aria-label="Sair do diário" title="Sair do diário" onClick={onSignOut}>
-            <LogOut size={19} aria-hidden="true" />
-          </button>
-        </div>
+        <button className="side-link" onClick={onSignOut}>
+          <LogOut size={20} strokeWidth={1.8} aria-hidden="true" />
+          <span>Sair</span>
+        </button>
       </aside>
 
       <main id="conteudo" className={`page page-${view}`}>

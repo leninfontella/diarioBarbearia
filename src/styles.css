@@ -1867,40 +1867,15 @@ textarea.inp {
     width: 260px;
     box-shadow: 12px 0 40px rgb(0 0 0 / 0.35);
   }
-  .sidebar-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 18px;
-    font-weight: 800;
-    margin: 0 3px 28px;
-    white-space: nowrap;
-  }
-  .sidebar-logo span {
-    width: 42px;
-    height: 42px;
-    flex: none;
-    border-radius: 50%;
-    background: var(--lime);
-    color: var(--ink);
-    display: grid;
-    place-items: center;
-  }
-  .sidebar-logo b,
   .side-link span,
-  .side-me div,
-  .side-me button {
+  .side-me div {
     opacity: 0;
     transition: opacity 0.15s ease;
   }
-  .sidebar:hover .sidebar-logo b,
   .sidebar:hover .side-link span,
   .sidebar:hover .side-me div,
-  .sidebar:hover .side-me button,
-  .sidebar:focus-within .sidebar-logo b,
   .sidebar:focus-within .side-link span,
-  .sidebar:focus-within .side-me div,
-  .sidebar:focus-within .side-me button {
+  .sidebar:focus-within .side-me div {
     opacity: 1;
     transition-delay: 0.06s;
   }
@@ -1943,7 +1918,7 @@ textarea.inp {
     margin-top: auto;
   }
   .side-me {
-    margin-top: 10px;
+    margin-bottom: 28px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1974,20 +1949,6 @@ textarea.inp {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  .side-me button {
-    margin-left: auto;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    color: var(--mut-dark);
-    flex: none;
-  }
-  .side-me button:hover {
-    color: #fff;
-    background: var(--ink);
   }
 
   .page,
